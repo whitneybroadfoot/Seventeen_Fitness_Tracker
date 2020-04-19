@@ -8,31 +8,30 @@ fetch("/api/workouts/range")
     populateChart(data);
   });
 
+API.getWorkoutsInRange();
 
-API.getWorkoutsInRange()
-
-  function generatePalette() {
-    const arr = [
-    "#003f5c",
-    "#2f4b7c",
-    "#665191",
-    "#a05195",
-    "#d45087",
-    "#f95d6a",
-    "#ff7c43",
-    "ffa600",
-    "#003f5c",
-    "#2f4b7c",
-    "#665191",
-    "#a05195",
-    "#d45087",
-    "#f95d6a",
-    "#ff7c43",
-    "ffa600"
-  ]
+function generatePalette() {
+  const arr = [
+    "#FFFFEE",
+    "#BBDDDD",
+    "#AADDCC",
+    "#ADB7D8",
+    "#7995F2",
+    "#08AEEA",
+    "#007BA8",
+    "#116688",
+    "#005566",
+    "#223399",
+    "#004A66",
+    "#113388",
+    "#002533",
+    "#101011",
+    "#000022",
+    "#220022"
+  ];
 
   return arr;
-  }
+}
 function populateChart(data) {
   let durations = duration(data);
   let pounds = calculateTotalWeight(data);
@@ -59,8 +58,8 @@ function populateChart(data) {
       datasets: [
         {
           label: "Workout Duration In Minutes",
-          backgroundColor: "red",
-          borderColor: "red",
+          backgroundColor: "#000022",
+          borderColor: "#000022",
           data: durations,
           fill: false
         }
@@ -102,27 +101,27 @@ function populateChart(data) {
         "Wednesday",
         "Thursday",
         "Friday",
-        "Saturday",
+        "Saturday"
       ],
       datasets: [
         {
           label: "Pounds",
           data: pounds,
           backgroundColor: [
-            "rgba(255, 99, 132, 0.2)",
-            "rgba(54, 162, 235, 0.2)",
-            "rgba(255, 206, 86, 0.2)",
-            "rgba(75, 192, 192, 0.2)",
-            "rgba(153, 102, 255, 0.2)",
-            "rgba(255, 159, 64, 0.2)"
+            "#FFFFEE",
+            "#BBDDDD",
+            "#AADDCC",
+            "#ADB7D8",
+            "#7995F2",
+            "#08AEEA"
           ],
           borderColor: [
-            "rgba(255, 99, 132, 1)",
-            "rgba(54, 162, 235, 1)",
-            "rgba(255, 206, 86, 1)",
-            "rgba(75, 192, 192, 1)",
-            "rgba(153, 102, 255, 1)",
-            "rgba(255, 159, 64, 1)"
+            "#FFFFEE",
+            "#BBDDDD",
+            "#AADDCC",
+            "#ADB7D8",
+            "#7995F2",
+            "#08AEEA"
           ],
           borderWidth: 1
         }
@@ -218,6 +217,6 @@ function workoutNames(data) {
       workouts.push(exercise.name);
     });
   });
-  
+
   return workouts;
 }
