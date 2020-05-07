@@ -12,3 +12,5 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 * Add new exercises to a new workout plan.
 * View multiple the combined weight of multiple exercises on the stats page.
 
+Running locally on PORT || 3001;
+
