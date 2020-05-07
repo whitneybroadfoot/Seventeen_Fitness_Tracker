@@ -13,4 +13,9 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 * View multiple the combined weight of multiple exercises on the stats page.
 
 Running locally on PORT || 3001;
+# Deployed Heroku Application
+
+ https://seventeen-fitness-tracker.herokuapp.com/?id=5e9c94d34e9fb11708e37180
+ 
+ 
 
