@@ -1,5 +1,3 @@
-# Seventeen_Fitness_Tracker
-
 ![image of workout equipment](https://user-images.githubusercontent.com/55456375/79693602-c8f4a380-8228-11ea-89bc-b74b82bed985.png)
 
 Front end code provided: create Mongo database with a Mongoose schema and handle routes with Express.
